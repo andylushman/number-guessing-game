@@ -1,0 +1,141 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/***************
+  HEADER STYLE
+****************/
+
+header  {
+  background-color: #404041;
+  color: #ed458b;
+}
+
+h1  {
+  margin: 0px;
+  padding: 15px;
+}
+
+span {
+  color: #e6e7e8;
+  font-weight: 300;
+}
+
+/*****************
+  SECTION CONTENT
+******************/
+
+.div-2 {
+  padding: 10px 0px 5px;
+  border: 1px black solid;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+}
+
+.div-2 p{
+  display: inline-block;
+  padding: 5px 40px;
+}
+
+p {
+  color: #404041;
+  margin: 0;
+}
+
+.lg-text {
+  padding-top: 15px;
+  display: block;
+  height: 18px;
+}
+
+.last-guess {
+  font-size: 11em;
+  color: #ed458b;
+  height: 215px;
+  width: 33%;
+  min-width: 206px;
+  display: inline-block;
+  margin: -7px 7px 0;
+}
+
+.result {
+    display: block;
+    padding-bottom: 15px;
+    height: 18px;
+  }
+
+/********************
+  USER INPUT STYLE
+*********************/
+
+#guess-input {
+  display: block;
+  margin: 20px auto;
+  width: 170px;
+  padding: 6px 1px;
+}
+
+#min, #max {
+  width: 50px;
+  padding: 5px 28px;
+}
+
+input {
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid #ed458b;
+  color: #ed458b;
+}
+
+input:disabled {
+  color: #d0d2d3;
+  border-bottom: 3px solid #d0d2d3;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*****************
+  BUTTON STYLE
+******************/
+
+#range-btn, #reset-btn {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  padding: 8px 50px;
+  color: #fff;
+  background-color: #929497;
+  max-width: 300px;
+}
+
+button:disabled {
+  background-color: #d0d2d3;
+}
+
+button:hover:enabled {
+  background-color: #eb008b;
+  cursor: pointer;
+}
+
+/***************
+  MEDIA QUERIES
+****************/
+
+@media screen and (max-width:500px) {
+  #submit-btn, #clear-btn {
+    width: 75%;
+    display: block;
+    margin: 6px auto;
+  }
+  .last-guess{
+    height: 190px;
+  }
+}
